@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdullah Tech Hub</title>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00c6ff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-box {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .service-box:hover {
+      background: #222;
+    }
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px;
+      background: #00c6ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      color: #aaa;
+      padding: 15px 0;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Abdullah Tech Hub</h1>
+    <p>Inspiring Innovation. Empowering Digital Lives.</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services" data-aos="fade-up">
+    <h2>Our Tech Services</h2><br>
+    <div class="services">
+      <div class="service-box" data-aos="fade-right">
+        <h3>Website Development</h3>
+        <p>Modern, responsive websites for tech businesses and startups.</p>
+      </div>
+      <div class="service-box" data-aos="fade-up">
+        <h3>Social Media Marketing</h3>
+        <p>Grow your presence with Facebook & Instagram ad strategies.</p>
+      </div>
+      <div class="service-box" data-aos="fade-left">
+        <h3>YouTube Automation</h3>
+        <p>Faceless YouTube channel setup, editing, and publishing systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Abdullah Tech Hub</h2>
+    <p>We're passionate about digital technology and automation. Our mission is to help you thrive online — from sleek websites to automated video content, we do it all.</p>
+    <img src="https://images.unsplash.com/photo-1549921296-3a4f47a3b4b3?auto=format&fit=crop&w=1000&q=80" alt="About Us">
+  </section>
+
+  <section id="video" data-aos="zoom-in">
+    <h2>Our Featured Short</h2>
+    <iframe src="https://www.youtube.com/embed/iPK6wcE7oBw" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:cakef6852@gmail.com" style="color:#00c6ff;">cakef6852@gmail.com</a></p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abdullah Tech Hub | All Rights Reserved</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/923001234567" target="_blank" title="Chat on WhatsApp">✆</a>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+</body>
+</html>
